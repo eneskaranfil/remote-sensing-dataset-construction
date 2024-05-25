@@ -4,6 +4,7 @@ import argparse
 from collections import defaultdict
 from tqdm import tqdm
 
+
 def load_json_data(file_path):
     with open(file_path, 'r') as file:
         return json.load(file)
