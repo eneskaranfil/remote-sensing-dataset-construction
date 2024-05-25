@@ -1,0 +1,58 @@
+
+my current dataset format here as follows:
+
+{
+        "id": "0",
+        "image": "airport_1.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nBriefly describe this image."
+            },
+            {
+                "from": "gpt",
+                "value": "many planes are parked next to a long building in an airport ."
+            }
+        ]
+    },
+    {
+        "id": "1",
+        "image": "airport_1.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nBriefly describe this image."
+            },
+            {
+                "from": "gpt",
+                "value": "many planes are parked next to a long building in an airport ."
+            }
+        ]
+    },
+
+ı need format as:
+
+{
+        "id": "0",
+        "image": "airport_1.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nBriefly describe this image."
+            },
+            {
+                "from": "gpt",
+                "value": "many planes are parked next to a long building in an airport ."
+            },
+            {
+                "from": "human",
+                "value": "<image>\nBriefly describe this image."
+            },
+            {
+                "from": "gpt",
+                "value": "many planes are parked next to a long building in an airport ."
+            }, ... (can be more question)
+        ]
+    },
+
+gather same image name entries in the one entry. 
